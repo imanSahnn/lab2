@@ -2,36 +2,90 @@
 <html>
 <head>
     <style>
-        table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
+          table {
+            width: 800px; /* Adjust the width as needed */
+            max-width: 1000px; /* Set a maximum width if desired */
+            margin: 0 auto; /* Center the table horizontally */
+        }
+        th, td {
+            padding: 10px; /* Adjust the padding to increase cell size */
+            text-align: left;
+            border: 1px solid black; /* Add this rule to set the border */
+        }
+        th {
+            background-color: #d8c7b7;
+        }
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url('bg2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: flex-start; /* Align content at the top */
+    }
+    .biodataheading {
+            text-align: center; /* Move the heading to the right */
+            margin-right: 20px; /* Adjust the right margin */
+        }
+        .img-center {
+            margin: 0 auto; /* Center the image horizontally */
+            display: block; /* Remove default inline layout */
+        }
+    .table-container{
+        align-self: center;
+            padding: 20px;
+    }
+    .less-wide
+    {
+        width:120px ;
+    }
+    .navigation {
+            background-color: #d8c7b7;
+            padding: 10px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #000000;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>My Personal Details</h1>
+    <div class="navigation">
+        <a class="nav-link" href="biodata.html">Biodata</a>
+        <a class="nav-link" href="hobbies.html">Hobbies</a>
+        <a class="nav-link" href="exp.html">Campus Life</a>
+    </div>
+    
+    <h1 class="biodataheading">   Biodata</h1>
+    <div class="table-container">
     <table >
         <tr>
-            <td style="background-color:#1a90c7" style="width:170px"><strong>Name:</strong></td>
+            <td style="background-color:#d8c7b7" class="less-wide" ><strong>Name:</strong></td>
             <td >Mohamad Iman Muhaimin Bin Husin</td>
             <td>
-                <img src="./img.png" width="100">
+                <img src="./img.png" width="100" class="img-center">
             </td>
         </tr>
         <tr>
-            <td style="background-color:#1a90c7"><strong>Date of Birth:</strong></th>
+            <td style="background-color:#d8c7b7"><strong>Date of Birth:</strong></th>
             <td colspan="2">30/7/2002</td>
         </tr>
         <tr>
-            <td style="background-color:#1a90c7"><strong>Religion:</strong></td>
+            <td style="background-color:#d8c7b7"><strong>Religion:</strong></td>
             <td colspan="2">Islam</td>
         </tr>
         <tr>
-            <td style="background-color:#1a90c7"><strong>Race:</strong></td>
+            <td style="background-color:#d8c7b7"><strong>Race:</strong></td>
             <td colspan="2">Melayu</td>
         </tr>
         <tr>
-            <td style="background-color:#1a90c7" rowspan="4"><strong>Address:</strong></td>
+            <td style="background-color:#d8c7b7" rowspan="4"><strong>Address:</strong></td>
             <td style="width: 170px;">
                 Street
             </td>
@@ -49,7 +103,7 @@
             </td><td>Johor</td></tr>
         </tr>
         <tr>
-            <td style="background-color:#1a90c7" rowspan="3"><strong>Contact:</strong></td>
+            <td style="background-color:#d8c7b7" rowspan="3"><strong>Contact:</strong></td>
             <td>
                 Mobile Phone
             </td>
@@ -63,22 +117,23 @@
                 Website
             </td><td>iman.com</td></tr>
             <tr>
-                <td style="background-color:#1a90c7"><strong>Course and Instituition:</strong></th>
+                <td style="background-color:#d8c7b7"><strong>Course and Instituition:</strong></th>
                 <td colspan="2">BIP FSTKM</td>
             </tr>
             <tr>
-                <td style="background-color:#1a90c7"><strong>Programming skills:</strong></th>
+                <td style="background-color:#d8c7b7"><strong>Programming skills:</strong></th>
                 <td colspan="2">HTML</td>
             </tr>
             <tr>
-                <td style="background-color:#1a90c7"><strong>Personal Interest:</strong></th>
+                <td style="background-color:#d8c7b7"><strong>Personal Interest:</strong></th>
                 <td colspan="2">Game</td>
             </tr>
             <tr>
-                <td style="background-color:#1a90c7"><strong>Future plan of 2024:</strong></th>
+                <td style="background-color:#d8c7b7"><strong>Future plan of 2024:</strong></th>
                 <td colspan="2">Finish PSM</td>
             </tr>
             
     </table>
+</div>
     </body>
     </html>

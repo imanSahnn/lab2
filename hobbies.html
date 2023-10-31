@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: flex-start; /* Align content at the top */
+            align-items: center; /* Center horizontally */
+            text-align: center; /* Center text horizontally */
+        }
+
+        .navigation {
+            background-color: #d8c7b7;
+            padding: 10px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000000;
+            margin-right: 20px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('bg2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .panel {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 40%; /* Adjust the width as needed */
+        }
+
+        .hobby-list {
+            list-style-type: disc; /* Use filled circles as list markers */
+            list-style-position: inside; /* Place the list markers inside the content box */
+            padding: 0;
+            font-size: 23px;
+            margin: 10px 10px;
+            font-family: 'YourCustomFont', cursive;
+        }
+
+      
+    </style>
+    <title>My Hobbies</title>
+    <!-- Add your CSS styles or include external CSS files here if needed -->
+</head>
+<body>
+   
+    <div class="navigation">
+        <a class="nav-link" href="biodata.html">Biodata</a>
+        <a class="nav-link" href="hobbies.html">Hobbies</a>
+        <a class="nav-link" href="exp.html">Campus Life</a>
+    </div>
+
+    <div class="container">
+        <h1>My Hobbies</h1>
+
+        <div class="panel">
+            <p>Here are my hobbies:</p>
+
+            <ul class="hobby-list">
+                <li>Gaming</li>
+                <li>Jogging</li>
+                <li>Coding</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
